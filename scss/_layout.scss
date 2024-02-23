@@ -5,8 +5,9 @@ header {
   background-color: transparent;
   @include set-box(9rem);
   position: fixed;
-  top:0;
+  top:0; left:0;
   transition: 0.3s ease-in;
+  z-index: 100;
   
   .header_wrap {
     @include set-1440(9rem);
