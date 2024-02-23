@@ -1,9 +1,7 @@
 @charset "UTF_8";
 @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
-
-
 .de_header {
-  background: url('../img/de_header1.png') center 10%;
+  background: url('../img/menu_visual.jpg') center 10%;
   height: 45.6rem;
   text-align: center;
   padding: 16.7rem 0 0;
@@ -48,7 +46,6 @@
 }
 
 .de_visual {
-  @include set-border();
   @include set-1440();
   display: flex;
   justify-content: center;
@@ -106,6 +103,7 @@
 /**********1024이하********/
 @media (max-width:1024px){
   .de_header {
-    background: url('../img/de_header2.png') center center / cover;
+    height: 30rem;
+    background: url('../img/menu_visual_mobile.jpg') center center / cover;
   }
 }

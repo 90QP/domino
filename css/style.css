@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
 @font-face {
   font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
@@ -257,6 +258,148 @@ header .header_wrap nav.header_menu .mobile_btn {
 }
 main {
   height: 300vh;
+}
+
+main.menu_main span {
+  display: block;
+  font-size: 80rem;
+}
+
+.de_header {
+  background: url("../img/menu_visual.jpg") center 10%;
+  height: 45.6rem;
+  text-align: center;
+  padding: 16.7rem 0 0;
+}
+.de_header p {
+  font-family: "Jomhuria", serif;
+  font-size: 13rem;
+  color: #fff;
+  text-shadow: 0 0 1rem #222;
+}
+.de_header ul {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  color: #fff;
+  text-shadow: 0 0 1rem #222;
+}
+.de_header ul li a {
+  font-size: 2rem;
+}
+
+.de_menu {
+  border-bottom: 2px solid #D8DCE0;
+  margin-bottom: 14rem;
+}
+.de_menu ul {
+  max-width: 1440px;
+  height: 12rem;
+  margin: 0 auto;
+  display: flex;
+}
+.de_menu ul li a {
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 0 2.5rem;
+  line-height: 12rem;
+}
+
+.de_header {
+  background: url("../img/menu_visual.jpg") center 10%;
+  height: 45.6rem;
+  text-align: center;
+  padding: 16.7rem 0 0;
+}
+.de_header p {
+  font-family: "Jomhuria", serif;
+  font-size: 13rem;
+  color: #fff;
+  text-shadow: 0 0 1rem #222;
+}
+.de_header ul {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  color: #fff;
+  text-shadow: 0 0 1rem #222;
+}
+.de_header ul li a {
+  font-size: 2rem;
+}
+
+.de_menu {
+  border-bottom: 2px solid #D8DCE0;
+  margin-bottom: 14rem;
+}
+.de_menu ul {
+  max-width: 1440px;
+  height: 12rem;
+  margin: 0 auto;
+  display: flex;
+}
+.de_menu ul li a {
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 0 2.5rem;
+  line-height: 12rem;
+}
+
+.de_visual {
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.de_visual img {
+  height: 60rem;
+}
+.de_visual .de_visual_op .de_visual_op_txt {
+  margin-bottom: 2.5rem;
+}
+.de_visual .de_visual_op .de_visual_op_txt h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #E71C29;
+  margin-bottom: 1.5rem;
+}
+.de_visual .de_visual_op .de_visual_op_txt p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.de_visual .de_visual_op .de_visual_op_txt a {
+  font-size: 1.2rem;
+  color: #999;
+}
+.de_visual .de_visual_op .de_visual_op_txt a:hover {
+  color: #6d6d6d;
+}
+.de_visual .de_visual_op .de_visual_op_size {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #999999;
+}
+.de_visual .de_visual_op .de_visual_op_size .size_btn {
+  border: 0.3rem solid #E71C29;
+  background: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 20rem;
+}
+.de_visual .de_visual_op .de_visual_op_size .size_btn:first-child {
+  margin-right: 3rem;
+}
+
+/**********1024이하********/
+@media (max-width: 1024px) {
+  .de_header {
+    height: 30rem;
+    background: url("../img/menu_visual_mobile.jpg") center center/cover;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

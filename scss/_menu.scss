@@ -1,0 +1,51 @@
+main.menu_main {
+  span {
+    display: block;
+    font-size: 80rem;
+  }
+}
+
+.de_header {
+  background: url('../img/menu_visual.jpg') center 10%;
+  height: 45.6rem;
+  text-align: center;
+  padding: 16.7rem 0 0;
+
+  p {
+    font-family: $jom;
+    font-size: 13rem;
+    color: #fff;
+    text-shadow: 0 0 1rem #222;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: #fff;
+    text-shadow: 0 0 1rem #222;
+
+    li {
+
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.de_menu {
+  border-bottom: 2px solid #D8DCE0;
+  margin-bottom: 14rem;
+  ul {
+    @include set-1440(12rem);
+    display: flex;
+    li {
+      a {
+        display: inline-block;
+        font-size: 2.2rem;
+        font-weight: 600;
+        padding: 0 2.5rem;
+        line-height: 12rem;
+      }
+    }
+  }
+}
