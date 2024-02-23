@@ -17,8 +17,3 @@ mBtn.addEventListener('click',()=>{
   mBtn.classList.toggle('on');
   mainMenu.classList.toggle('on');
 })
-
-mainMenu.addEventListener('click',(e)=>{
-  //메뉴에서 링크 없는 버튼 눌렀을때 맨 상단으로 가는 것 방지
-  e.preventDefault();
-})
