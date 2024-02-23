@@ -1,0 +1,32 @@
+/* 비쥬얼 */
+#visual {
+  @include set-box(100vh,100%);
+  overflow: hidden;
+
+  img { display: none; }
+  video {
+    @include set-box(100vh);
+    object-fit: cover;
+  }
+}
+
+@media (max-width:1024px){
+
+}
+
+/* 헤더 768px */
+@media (max-width:768px){
+  #visual {
+    video {
+      display: none;
+    }
+    img {
+      display: block;
+    }
+  }
+}
+
+
+main {
+  height: 300vh; //잠깐 메인좀 길게해놓음!! 나중에지워!!
+}
