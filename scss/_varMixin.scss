@@ -2,13 +2,8 @@ $blue : #2471B4;
 $red : #E71C29;
 $black : #322F2F;
 $white : #F5F5F5; 
-$gray1 :#7F8085;
-
 $pre : 'Pretendard-Regular', sans-serif;
 $jom : "Jomhuria", serif;
-
-$shadow :0 0 10px rgba(0, 0, 0, 0.2);
-
 
 @mixin set-box ($height, $width:100%, $border-radius:0){
   height: $height;

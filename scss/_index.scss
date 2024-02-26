@@ -1,10 +1,10 @@
 /* 비쥬얼 */
 #visual {
   @include set-box(100vh,100%);
-  overflow: hidden; 
+  overflow: hidden;
 
   img { display: none; }
-  video { 
+  video {
     @include set-box(100vh);
     object-fit: cover;
   }
@@ -24,15 +24,4 @@
       display: block;
     }
   }
-}
-
-
-main {
-  height: 300vh; //잠깐 메인좀 길게해놓음!! 나중에지워!!
-  
-
-  
-}
-footer {
-
 }

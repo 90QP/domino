@@ -67,12 +67,7 @@ main.menu_main {
     z-index: -1;
   }
 } 
-
-
 }
-
-
-
 
 /* 메뉴 서브페이지 헤더 - 1024px */
 @media (max-width:1024px){
@@ -135,4 +130,75 @@ main.menu_main {
     } 
   }
 
+}
+
+/* 메뉴 유의사항 */
+.caution_wrap {
+  @include set-1440;
+  padding: 5rem;
+  border-top: 2px solid #D9D9D9;
+
+  .caution {
+    img {
+      @include set-box (5rem, 5rem)
+    }
+  }
+
+  .caution1 {
+    margin-bottom: 8rem;
+    .menu_h3 {
+      margin:2rem 0;
+    }
+
+    .menu_p {
+      line-height: 150%;
+    }
+  }
+
+  .caution2 {
+    display: flex;
+    gap: 2.4rem;
+    padding-bottom: 3rem;
+
+    .menu_h3 {
+      margin: 1.2rem 0 5rem;
+    }
+  }
+}
+@media (max-width:768px){
+  .caution_wrap {
+    width: 100%;
+    
+    .caution {
+      img {
+        @include set-box (4rem, 4rem)
+      }
+    }
+  
+    .caution2 {
+      flex-direction: column;
+      gap: 2rem;
+  
+      .menu_h3 {
+        line-height: 150%;
+      }
+
+      .menu_btn {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+/* 피자 목록 */
+
+.menu_list_wrap {
+  @include set-1440();
+  .menu_list {
+    padding: 4rem;
+
+    .menu_tit {
+      margin-bottom: 4.5rem;
+    }
+  }
 }
