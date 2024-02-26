@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>도미노피자</title>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -40,11 +42,101 @@
   </div>
   <main>
     --메인--
+    <section class="section1">
+      <div class="main_order">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="order_wrap">
+                <img src="img/main_order1.png" alt="배달주문" class="main_order_img" >
+                <h3 class="main_order_h3 red">
+                  배달주문 <i class="fa-solid fa-circle-arrow-right"></i>
+                </h3>
+                <p class="main_order_p">등급별 최대 30%</p>
+              </div> 
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="order_wrap">
+                <img src="img/main_order2.png" alt="포장주문" class="main_order_img" >
+                <h3 class="main_order_h3 blue">
+                  포장주문 <i class="fa-solid fa-circle-arrow-right"></i>
+                </h3>
+                <p class="main_order_p">등급별 최대 40%</p>
+            </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="order_wrap ">
+                <img src="img/main_order33.png" alt="배달주문" class="main_order_img" >
+                <h3 class="main_order_h3 black">
+                  퀵 오더 <i class="fa-solid fa-circle-arrow-right"></i>
+                </h3>
+                <p class="main_order_p">자주 이용하는 메뉴를<br>더 빠르게 주문해보세요!</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section2">
+      <h2 >best menu</h2>
+      <!--<img src="img/title.png" alt="타이틀배경">-->
+      <div id="bestMemu">
+        <div class="swiper menu-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/pizza1.jpg" alt="">
+              <h4>페퍼로니 피자</h4>
+              <p>Pepperoni Pizza</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/pizza3.png" alt="">
+              <h4>페퍼로니 피자</h4>
+              <p>Pepperoni Pizza</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/pizza4.png" alt="">
+              <h4>페퍼로니 피자</h4>
+              <p>Pepperoni Pizza</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/pizza5.png" alt="">
+              <h4>페퍼로니 피자</h4>
+              <p>Pepperoni Pizza</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/pizza6.png" alt="">
+              <h4>페퍼로니 피자</h4>
+              <p>Pepperoni Pizza</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/pizza7.png" alt="">
+              <h4>페퍼로니 피자</h4>
+              <p>Pepperoni Pizza</p>
+            </div>
+            ...
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section3">
+      <div class="chainStore">
+        <img src="img/store.png" alt="">
+      </div>
+    </section>
   </main>
   <footer>
     --푸터--
   </footer>
 
   <script src="js/layout.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>
