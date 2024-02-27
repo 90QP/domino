@@ -191,7 +191,6 @@ main.menu_main {
 }
 
 /* 피자 목록 */
-
 .menu_list_wrap {
   @include set-1440();
   .menu_list {
@@ -199,6 +198,132 @@ main.menu_main {
 
     .menu_tit {
       margin-bottom: 4.5rem;
+    }
+
+    .menu_ul {
+      display: flex;
+      flex-wrap: wrap; 
+      row-gap: 20px;
+      width: 100%;
+      min-width: 91rem;
+      padding: 0 2rem;
+
+      li {
+        width: 33.3%;
+        padding: 1.2rem;
+
+        .menu_name {
+          font-size: 2.6rem;
+          font-weight: 900;
+          margin-top:1.4rem;
+        }
+        .menu_info {
+          font-size: 1.5rem;
+          font-weight: 300;
+          min-height: 4rem;
+          color: #828282;
+          margin: 0.8rem 0 2rem;
+        }
+        .menu_Lprice {
+          display: inline-block;
+          font-size: 2.2rem;
+          color:$red;
+          font-weight: 900;
+        }
+        .menu_Rprice {
+          display: inline-block;
+          font-size: 2.2rem;
+          color:$blue;
+          font-weight: 900;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width:768px){
+  .menu_list_wrap {
+    width: 100%;
+
+    .menu_list {
+      .menu_tit {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+      }
+  
+      .menu_ul {
+        min-width: auto;
+        padding: 0;
+  
+        li {
+          width: 100%;
+          padding: 0;
+          border-radius: 2.2rem;
+          overflow: hidden;
+          box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+          a { 
+            display: flex;
+            align-items: center;
+            gap:1rem;
+            background-color: #fff; }
+          img {
+            width: 42%;
+          }
+          
+          .menu_name {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-top:0;
+          }
+          .menu_info {
+            font-size: 1.4rem;
+            font-weight: 300;
+            min-height: 4rem;
+            color: #828282;
+            margin: 0.8rem 0 2rem;
+          }
+          .menu_Lprice {
+            font-size: 1.6rem;
+            margin-bottom: 0.8rem;
+          }
+          .menu_Rprice {
+            display: block;
+            font-size: 1.6rem;
+            margin:0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* side */
+.menu_list_wrap {
+  .menu_list {
+    .menu_ul.menu_combo,.menu_ul.menu_side,.menu_ul.menu_etc {
+      li {
+        .menu_name {
+          font-size: 2.4rem;
+        }
+        .menu_Lprice {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width:768px){
+  .menu_list_wrap {
+    .menu_list {
+      .menu_ul.menu_combo,.menu_ul.menu_side,.menu_ul.menu_etc {
+        li {
+          .menu_name {
+            font-size: 1.8rem;
+          }
+        }
+      }
     }
   }
 }
