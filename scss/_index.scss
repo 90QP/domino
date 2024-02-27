@@ -147,3 +147,97 @@
     img{width: 100%;}
   }
 }
+
+/* section4*/
+.section4 {
+  h2 { 
+    letter-spacing:1;
+    position: relative;
+    font-family: "Jomhuria";
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-size: 10rem;
+    margin: 10rem 0 5rem;
+  }
+  .event_pc {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 4.5rem;
+
+    .event_pc_left {}
+    .event_pc_center {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+    }
+    .event_pc_right {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  .event_ta {
+    display: none;
+  }
+  .event_mo {
+    display: none;
+  }
+  
+  @media (max-width:1024px){
+    h2 {
+      font-size: 8rem;
+    }
+    .event_pc {
+      display: none;
+    }
+    .event_ta {
+      padding: 0 4.5rem;
+      display: flex;
+      gap: 2rem;
+      .event_ta_left {
+        a {
+          display: block;
+          & + a {
+            margin-top: 2rem;
+          }
+        }
+      }
+      .event_ta_right {
+        a {
+          display: block;
+          & + a {
+            margin-top: 2rem;
+          } 
+        }
+      }
+    }
+    .event_mo {
+      display: none;
+    }
+  }
+
+
+  @media (max-width:768px){
+    h2 {
+      font-size: 8rem;
+    }
+    .event_pc {
+      display: none;
+    }
+    .event_ta {
+      display: none;
+    }
+    .event_mo {
+      display: block;
+      margin: 0 4rem;
+      a {
+        display: block;
+        & + a {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
