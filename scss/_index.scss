@@ -1,5 +1,10 @@
 @charset 'UTF-8';
 
+
+.red{ color:$red }
+.blue{ color:$blue }
+.black{ color:$black }
+
 /* 비쥬얼 */
 #visual {
   @include set-box(100vh,100%);
@@ -42,54 +47,54 @@
   padding:5rem 0;
   box-shadow:$shadow;
 
-  ul {
+    ul {
     display: flex;
-
-
-    li + li { border-left:1px solid rgb(235, 235, 235);}
-
-
-    li { 
-      flex: 1;
-      
-      
+      li + li { border-left:1px solid rgb(235, 235, 235);}
+      li { 
+        flex: 1;
       .order_wrap {
         margin-left:3.5rem;
 
         .main_order_img {
           width:20%; 
         }
-
         .main_order_h3 {
           padding: 1rem 0;
           font-size: 5rem;
           font-weight: 300;
           i{ font-size: 3rem; }
-
-          
         }
         .main_order_p { 
             font-size: 1.9rem; 
             color:$gray1;
           }
-
-    
       }
     } 
   }
-  
-  .red{ color:$red}
-  .blue{color:$blue}
-  .black{color:$black}
-
-  
   }
   
 }
   @media (max-width:768px){
-      .main_order_h3{ font-size: 1rem;}
-      .main_order_p {display:none;}
-  }   
+  .section1 { 
+    .main_order {
+            ul {
+              li { 
+              .order_wrap {
+        
+                .main_order_img {
+                }
+                .main_order_h3 {
+                  font-size: 3rem;
+                }
+                .main_order_p { 
+                    display: none;
+                  }
+              }
+            } 
+          }
+        }
+    }
+}
 
 
 /* section2 - 메인 피자 메뉴 */
