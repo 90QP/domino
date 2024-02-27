@@ -1,0 +1,91 @@
+{ "data" : [
+  {
+    "id":1,
+    "name":"스테이크 콥 웜 샐러드 콤보",
+    "img":"img/sidecombo1.jpg",
+    "pricepre":"12100",
+    "priceL":"9800",
+    "category":"combo"
+  },
+  {
+    "id":2,
+    "name":"윈터 트러플 크림 파스타 콤보",
+    "img":"img/sidecombo2.jpg",
+    "pricepre":"12100",
+    "priceL":"9800",
+    "category":"combo"
+  },
+  {
+    "id":3,
+    "name":"파스타 트윈 콤보",
+    "img":"img/sidecombo3.jpg",
+    "pricepre":"13100",
+    "priceL":"10600",
+    "category":"combo"
+  },
+  {
+    "id":4,
+    "name":"파스타 콤보",
+    "img":"img/sidecombo4.jpg",
+    "pricepre":"12100",
+    "priceL":"9800",
+    "category":"combo"
+  },
+  {
+    "id":5,
+    "name":"핫 윙 콤보",
+    "img":"img/sidecombo5.jpg",
+    "pricepre":"12100",
+    "priceL":"9800",
+    "category":"combo"
+  },
+  {
+    "id":6,
+    "name":"스테이크 콥 웜 샐러드",
+    "img":"img/side1.jpg",
+    "priceL":"9800",
+    "category":"side"
+  },
+  {
+    "id":7,
+    "name":"윈터 트러플 크림 파스타",
+    "img":"img/side2.jpg",
+    "priceL":"9800",
+    "category":"side"
+  },
+  {
+    "id":8,
+    "name":"NEW 치즈 볼로네즈 스파게티",
+    "img":"img/side3.jpg",
+    "priceL":"9800",
+    "category":"side"
+  },
+  {
+    "id":9,
+    "name":"웨스턴 핫 윙(8조각)",
+    "img":"img/side4.jpg",
+    "priceL":"9800",
+    "category":"side"
+  },
+  {
+    "id":10,
+    "name":"하프&하프 파스타 (NEW 치즈 & 베이컨 까르보나라)",
+    "img":"img/side5.jpg",
+    "priceL":"10800",
+    "category":"side"
+  },
+  {
+    "id":11,
+    "name":"베이컨 까르보나라 페투치니",
+    "img":"img/side6.jpg",
+    "priceL":"9800",
+    "category":"side"
+  },
+  {
+    "id":12,
+    "name":"도미노 코울슬로",
+    "img":"img/side7.jpg",
+    "priceL":"2400",
+    "category":"side"
+  }
+]}

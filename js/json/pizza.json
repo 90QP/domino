@@ -1,0 +1,227 @@
+{ "data": [
+  {
+    "id":1,
+    "name":"맥콘 베이컨",
+    "info":"맥앤치즈의 고소함과 콘&베이컨의 실패 없는 단짠 조합!",
+    "img":"js/json/img/new1.jpg",
+    "priceL":"L 16,900원",
+    "priceM":"",
+    "category":"new"
+  },
+  {
+    "id":2,
+    "name":"클래식 리코타",
+    "info":"기본기 강한 토마토 소스에 리코타 치즈로 맛을 더 밀도있게!",
+    "img":"js/json/img/new2.jpg",
+    "priceL":"L 16,900원",
+    "priceM":"",
+    "category":"new"
+  },
+  {
+    "id":3,
+    "name":"맵퍼로니",
+    "info":"매콤+달콤+짭잘! 할라피뇨와 망고 하바네로 소스, 페퍼로니의 조화!",
+    "img":"js/json/img/new3.jpg",
+    "priceL":"L 17,900원",
+    "priceM":"",
+    "category":"new"
+  },
+  {
+    "id":4,
+    "name":"마라 불고기",
+    "info":"얼얼한 마라맛을 살린 불고기와 페퍼로니의 만남!",
+    "img":"js/json/img/new4.jpg",
+    "priceL":"L 17,900원",
+    "priceM":"",
+    "category":"new"
+  },
+  {
+    "id":5,
+    "name":"소시지 맥스",
+    "info":"이탈리안 페퍼 소시지, 페퍼로니, 포크, 햄, 불고기까지 5가지 미트를 맥스하게!",
+    "img":"js/json/img/new5.jpg",
+    "priceL":"L 17,900원",
+    "priceM":"",
+    "category":"new"
+  },
+  {
+    "id":6,
+    "name":"브리스킷 바비Q",
+    "info":"4가지 페퍼(블랙, 핑크, 화이트, 그린)로 시즈닝한 육즙 가득 브리스킷 스테이크!",
+    "img":"js/json/img/premium1.jpg",
+    "priceL":"L 34,900원~",
+    "priceM":"M 29,000원~",
+    "category":"premium"
+  },
+  {
+    "id":7,
+    "name":"치즈 크레이프 샌드",
+    "info":"7가지 치즈, 스테이크, 슈림프가 겹겹이 쌓인 맛의 품격! 도미노에서만 만날 수 있는 샌드 도우로 피자의 품격도 높이다!",
+    "img":"js/json/img/premium2.jpg",
+    "priceL":"L 34,900원~",
+    "priceM":"M 29,000원~",
+    "category":"premium"
+  },
+  {
+    "id":8,
+    "name":"아보카도 새우",
+    "info":"슈퍼시드 화이버 함유 도우로 더 맛있게!",
+    "img":"js/json/img/premium3.jpg",
+    "priceL":"L 27,900원~",
+    "priceM":"M 20,500원~",
+    "category":"premium"
+  },
+  {
+    "id":9,
+    "name":"와일드 와일드 웨스트 스테이크",
+    "info":"‘카우보이’들이 즐겨 먹던 정통 ‘그릴드 비프 스테이크'의 재현!",
+    "img":"js/json/img/premium4.jpg",
+    "priceL":"L 33,900원~",
+    "priceM":"M 28,000원~",
+    "category":"premium"
+  },
+  {
+    "id":10,
+    "name":"블랙타이거 슈림프",
+    "info":"바다와 육지의 대왕이 하나로",
+    "img":"js/json/img/premium5.jpg",
+    "priceL":"L 36,900원~",
+    "priceM":"M 30,000원~",
+    "category":"premium"
+  },
+  {
+    "id":11,
+    "name":"블록버스터4",
+    "info":"4개 도시의 프리미엄 요리를 품은 블록버스터급 콰트로 피자!",
+    "img":"js/json/img/premium6.jpg",
+    "priceL":"L 36,900원~",
+    "priceM":"M 25,000원~",
+    "category":"premium"
+  },
+  {
+    "id":12,
+    "name":"베스트 콰트로",
+    "info":"4가지 피자를 한판에",
+    "img":"js/json/img/premium7.jpg",
+    "priceL":"L 36,900원~",
+    "priceM":"M 29,500원~",
+    "category":"premium"
+  },
+  {
+    "id":13,
+    "name":"포테이토+블랙타이거 슈림프",
+    "info":"1999 포테이토 헤리티지 에디션",
+    "img":"js/json/img/half1.jpg",
+    "priceL":"L 32,400원",
+    "priceM":"",
+    "category":"half"
+  },
+  {
+    "id":14,
+    "name":"포테이토+브리스킷 바비Q",
+    "info":"1999 포테이토 헤리티지 에디션",
+    "img":"js/json/img/half2.jpg",
+    "priceL":"L 31,400원",
+    "priceM":"",
+    "category":"half"
+  },
+  {
+    "id":15,
+    "name":"포테이토+와일드 와일드 웨스트 스테이크",
+    "info":"1999 포테이토 헤리티지 에디션",
+    "img":"js/json/img/half3.jpg",
+    "priceL":"L 30,900원",
+    "priceM":"",
+    "category":"half"
+  },
+  {
+    "id":16,
+    "name":"포테이토+아보카도 새우",
+    "info":"1999 포테이토 헤리티지 에디션",
+    "img":"js/json/img/half4.jpg",
+    "priceL":"L 27,900원",
+    "priceM":"",
+    "category":"half"
+  },
+  {
+    "id":17,
+    "name":"포테이토",
+    "info":"도미노피자 No.1 레전드",
+    "img":"js/json/img/classic1.jpg",
+    "priceL":"L 27,900원~",
+    "priceM":"M 20,500원~",
+    "category":"classic"
+  },
+  {
+    "id":18,
+    "name":"뉴욕 오리진",
+    "info":"다채로운 토핑의 미국 피자 오리진 스타일",
+    "img":"js/json/img/classic2.jpg",
+    "priceL":"L 29,900원~",
+    "priceM":"M 22,500원~",
+    "category":"classic"
+  },
+  {
+    "id":19,
+    "name":"리얼불고기",
+    "info":"프리미엄 불고기 토핑이 듬뿍",
+    "img":"js/json/img/classic3.jpg",
+    "priceL":"L 29,900원~",
+    "priceM":"M 22,500원~",
+    "category":"classic"
+  },
+  {
+    "id":20,
+    "name":"우리 고구마",
+    "info":"고구마 큐브&무스가 듬뿍!",
+    "img":"js/json/img/classic4.jpg",
+    "priceL":"L 30,900원~",
+    "priceM":"M 23,500원~",
+    "category":"classic"
+  },
+  {
+    "id":21,
+    "name":"슈퍼디럭스",
+    "info":"누구나 사랑하는 베이직 피자",
+    "img":"js/json/img/classic5.jpg",
+    "priceL":"L 28,900원~",
+    "priceM":"M 21,500원~",
+    "category":"classic"
+  },
+  {
+    "id":22,
+    "name":"슈퍼슈프림",
+    "info":"콘과 파인애플의 달콤한 조화",
+    "img":"js/json/img/classic6.jpg",
+    "priceL":"L 27,900원~",
+    "priceM":"M 20,500원~",
+    "category":"classic"
+  },
+  {
+    "id":23,
+    "name":"베이컨체더치즈",
+    "info":"베이컨 매니아들의 원 픽",
+    "img":"js/json/img/classic7.jpg",
+    "priceL":"L 27,900원~",
+    "priceM":"M 20,500원~",
+    "category":"classic"
+  },
+  {
+    "id":24,
+    "name":"페퍼로니",
+    "info":"짭짤한 풍미가 일품",
+    "img":"js/json/img/classic8.jpg",
+    "priceL":"L 25,900원~",
+    "priceM":"M 18,500원~",
+    "category":"classic"
+  },
+  {
+    "id":25,
+    "name":"치즈",
+    "info":"토마토 소스와 풍부한 모차렐라",
+    "img":"js/json/img/classic9.jpg",
+    "priceL":"L 23,900원~",
+    "priceM":"M 16,500~",
+    "category":"classic"
+  }
+]}

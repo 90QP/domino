@@ -1,0 +1,72 @@
+{ "data" : [
+  {
+    "id":1,
+    "name":"코카콜라 1.25L",
+    "img":"img/etc1.jpg",
+    "priceL":"2300",
+    "category":"drink"
+  },
+  {
+    "id":2,
+    "name":"코카콜라 500ml",
+    "img":"img/etc2.jpg",
+    "priceL":"1700",
+    "category":"drink"
+  },
+  {
+    "id":3,
+    "name":"코카콜라 제로 1.25L",
+    "img":"img/etc3.jpg",
+    "priceL":"2300",
+    "category":"drink"
+  },
+  {
+    "id":4,
+    "name":"코카콜라 제로 500ml",
+    "img":"img/etc4.jpg",
+    "priceL":"1700",
+    "category":"drink"
+  },
+  {
+    "id":5,
+    "name":"스프라이트 1.5L",
+    "img":"img/etc5.jpg",
+    "priceL":"2400",
+    "category":"drink"
+  },
+  {
+    "id":6,
+    "name":"스프라이트 500ml",
+    "img":"img/etc6.jpg",
+    "priceL":"1700",
+    "category":"drink"
+  },
+  {
+    "id":7,
+    "name":"우리 피클 L",
+    "img":"img/etc7.jpg",
+    "priceL":"800",
+    "category":"etc"
+  },
+  {
+    "id":8,
+    "name":"우리 피클 M",
+    "img":"img/etc8.jpg",
+    "priceL":"500",
+    "category":"etc"
+  },
+  {
+    "id":9,
+    "name":"갈릭 디핑 소스 15g",
+    "img":"img/etc9.jpg",
+    "priceL":"200",
+    "category":"etc"
+  },
+  {
+    "id":10,
+    "name":"핫소스",
+    "img":"img/etc10.jpg",
+    "priceL":"100",
+    "category":"etc"
+  }
+]}
