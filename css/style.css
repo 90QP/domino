@@ -1,11 +1,6 @@
 @charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
-@font-face {
-  font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "Pretendard-Regular";
+  font-family: "Pretendard Variable", sans-serif;
   letter-spacing: -0.03rem;
   color: #322F2F;
 }
@@ -296,18 +291,154 @@ header .header_wrap nav.header_menu .mobile_btn {
     background-color: #111;
   }
 }
-.red {
-  color: #E71C29;
+/* 푸터 - PC(1440) */
+footer {
+  background-color: #2471B4;
+}
+footer .footer_wrap {
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  color: #fff;
+  padding: 2rem 0;
+}
+footer .footer_wrap .footer_section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer .footer_wrap .footer_section1 .footer_logo img {
+  width: 32rem;
+}
+footer .footer_wrap .footer_section1 .footer_logo h2 {
+  display: inline-block;
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+footer .footer_wrap .footer_section1 .footer_nav li {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  letter-spacing: 0.5px;
+}
+footer .footer_wrap .footer_section2 {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_wrap .footer_section2 .footer2_left .footer_info {
+  font-size: 1.3rem;
+  margin: 5rem 0;
+}
+footer .footer_wrap .footer_section2 .footer2_left address {
+  font-size: 1.3rem;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+footer .footer_wrap .footer_section2 .footer2_right .footer_prize {
+  display: flex;
+  gap: 2rem;
+  margin: 5rem 0 10rem;
+}
+footer .footer_wrap .footer_section2 .footer2_right .footer_prize .prize_card {
+  display: flex;
+  gap: 1rem;
+}
+footer .footer_wrap .footer_section2 .footer2_right .footer_prize .prize_card img {
+  width: 3rem;
+}
+footer .footer_wrap .footer_section2 .footer2_right .footer_prize .prize_card p {
+  font-size: 1.2rem;
+}
+footer .footer_wrap .footer_section2 .footer2_right .footer_sns {
+  text-align: right;
+}
+footer .footer_wrap .footer_section2 .footer2_right .footer_sns a {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0;
+  margin-left: 2rem;
 }
 
-.blue {
-  color: #2471B4;
+@media (max-width: 1210px) {
+  footer .footer_wrap {
+    width: 100%;
+    padding: 2rem;
+  }
+  footer .footer_wrap .footer_section1 .footer_logo img {
+    width: 30rem;
+  }
+  footer .footer_wrap .footer_section1 .footer_nav ul {
+    width: 40rem;
+    text-align: right;
+  }
+  footer .footer_wrap .footer_section2 .footer2_left .footer_info {
+    font-size: 1.2rem;
+  }
+  footer .footer_wrap .footer_section2 .footer2_left address {
+    font-size: 1.1rem;
+  }
+  footer .footer_wrap .footer_section2 .footer2_right .footer_prize {
+    display: flex;
+    gap: 1rem;
+    margin: 5rem 0 10rem;
+  }
+  footer .footer_wrap .footer_section2 .footer2_right .footer_prize .prize_card img {
+    width: 2.5rem;
+  }
+  footer .footer_wrap .footer_section2 .footer2_right .footer_prize .prize_card p {
+    font-size: 1.1rem;
+  }
+  footer .footer_wrap .footer_section2 .footer2_right .footer_sns {
+    text-align: right;
+  }
+  footer .footer_wrap .footer_section2 .footer2_right .footer_sns a {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0;
+    margin-left: 2rem;
+  }
 }
-
-.black {
-  color: #322F2F;
+@media (max-width: 940px) {
+  footer .footer_wrap {
+    position: relative;
+  }
+  footer .footer_wrap .footer_section1 .footer_nav {
+    display: none;
+  }
+  footer .footer_wrap .footer_section2 .footer2_right .footer_prize {
+    display: none;
+  }
+  footer .footer_wrap .footer_section2 .footer2_right .footer_sns {
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+  }
 }
-
+@media (max-width: 768px) {
+  footer .footer_wrap {
+    position: relative;
+  }
+  footer .footer_wrap .footer_section1 .footer_logo img {
+    width: 15rem;
+  }
+  footer .footer_wrap .footer_section1 .footer_logo h2 {
+    font-size: 2rem;
+  }
+  footer .footer_wrap .footer_section2 .footer2_left {
+    display: none;
+  }
+  footer .footer_wrap .footer_section2 .footer2_right .footer_sns {
+    position: absolute;
+    top: calc(50% - 1rem);
+    right: 2rem;
+  }
+  footer .footer_wrap .footer_section2 .footer2_right .footer_sns a {
+    width: 2rem;
+    margin-left: 1rem;
+  }
+}
 /* 비쥬얼 */
 #visual {
   height: 100vh;
@@ -325,7 +456,6 @@ header .header_wrap nav.header_menu .mobile_btn {
   object-fit: cover;
 }
 
-/* 헤더 768px */
 @media (max-width: 768px) {
   #visual video {
     display: none;
@@ -338,13 +468,17 @@ header .header_wrap nav.header_menu .mobile_btn {
 /* section1 - 주문 버튼 */
 .section1 .main_order {
   position: relative;
-  top: -13rem;
+  top: 0;
   max-width: 92rem;
   margin: auto;
   background: #ffffff;
   border-radius: 3rem;
   padding: 5rem 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.section1 .main_order.order_scroll {
+  top: -13rem;
 }
 .section1 .main_order ul {
   display: flex;
@@ -374,9 +508,32 @@ header .header_wrap nav.header_menu .mobile_btn {
   color: #7F8085;
 }
 
+@media (max-width: 1024px) {
+  .section1 .main_order {
+    margin: 0 5rem;
+  }
+  .section1 .main_order ul li .order_wrap .main_order_h3 {
+    font-size: 4rem;
+  }
+  .section1 .main_order ul li .order_wrap .main_order_p {
+    font-size: 1.6rem;
+  }
+}
 @media (max-width: 768px) {
+  .section1 .main_order {
+    margin: 0 2rem;
+    padding: 3rem 0;
+    text-align: center;
+  }
+  .section1 .main_order ul li .order_wrap {
+    margin-left: 0;
+  }
   .section1 .main_order ul li .order_wrap .main_order_h3 {
     font-size: 3rem;
+    line-height: 150%;
+  }
+  .section1 .main_order ul li .order_wrap .main_order_h3 i {
+    display: block;
   }
   .section1 .main_order ul li .order_wrap .main_order_p {
     display: none;
@@ -441,7 +598,7 @@ header .header_wrap nav.header_menu .mobile_btn {
   }
 }
 
-/* section3 */
+/* section3 - 도미노피자(흑백이미지) */
 .section3 {
   margin-top: 20rem;
 }
@@ -449,7 +606,7 @@ header .header_wrap nav.header_menu .mobile_btn {
   width: 100%;
 }
 
-/* section4*/
+/* section4 - 이벤트& 프로모션 */
 .section4 h2 {
   letter-spacing: 1;
   position: relative;
@@ -531,6 +688,266 @@ header .header_wrap nav.header_menu .mobile_btn {
   }
 }
 
+/* section5 - 매장 찾기*/
+.section5 {
+  margin: 20rem 0;
+  background: url("../img/search_bg.jpg") no-repeat center/cover;
+}
+.section5 .main_search_wrap {
+  max-width: 1440px;
+  height: 50rem;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section5 .main_search_wrap h2 {
+  font-size: 4.8rem;
+  letter-spacing: 1px;
+}
+.section5 .main_search_wrap span {
+  font-size: 4rem;
+  font-weight: 100;
+}
+.section5 .main_search_wrap p {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -0.25px;
+  margin: 5rem 0;
+}
+.section5 .serachBar_wrap {
+  width: 70vw;
+  max-width: 1000px;
+  position: relative;
+}
+.section5 .serachBar_wrap input#searchBar {
+  height: 7rem;
+  width: 100%;
+  border-radius: 7rem;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  padding-left: 3rem;
+}
+.section5 .serachBar_wrap input#searchBar::placeholder {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 2rem;
+}
+.section5 .serachBar_wrap button.searchBtn {
+  height: 5.7rem;
+  width: 5.7rem;
+  border-radius: 5rem;
+  border: none;
+  outline: none;
+  background-color: #E71C29;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+.section5 .serachBar_wrap button.searchBtn img {
+  width: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .section5 .main_search_wrap {
+    width: 100%;
+  }
+  .section5 .serachBar_wrap {
+    width: 90%;
+  }
+  .section5 .serachBar_wrap input#searchBar {
+    height: 5.5rem;
+    width: 100%;
+    border-radius: 5.5rem;
+  }
+  .section5 .serachBar_wrap button.searchBtn {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 5rem;
+    top: 0.5rem;
+    right: 0.7rem;
+  }
+  .section5 .serachBar_wrap button.searchBtn img {
+    width: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .section5 {
+    margin: 12rem 0;
+  }
+  .section5 .main_search_wrap {
+    width: 100%;
+    align-items: baseline;
+    padding-left: 5rem;
+  }
+  .section5 .main_search_wrap h2 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+  }
+  .section5 .main_search_wrap span {
+    font-size: 2.8rem;
+    font-weight: 100;
+  }
+  .section5 .main_search_wrap p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    margin: 4rem 0;
+  }
+  .section5 .serachBar_wrap input#searchBar {
+    height: 5rem;
+    width: 100%;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+  }
+  .section5 .serachBar_wrap input#searchBar::placeholder {
+    font-size: 1.6rem;
+  }
+  .section5 .serachBar_wrap button.searchBtn {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 5rem;
+    top: 0.5rem;
+    right: 0.7rem;
+  }
+  .section5 .serachBar_wrap button.searchBtn img {
+    width: 2rem;
+  }
+}
+/* section6 - 도미노 stroy */
+.section6 .main_info_wrap {
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 20rem;
+}
+.section6 .main_info_wrap article.hover_card {
+  flex: 2;
+}
+.section6 .main_info_wrap article.hover_card .card_txt {
+  opacity: 1;
+}
+.section6 .main_info_wrap article.hover_card:hover .card_txt .long_arrow {
+  transform: translateX(10px);
+}
+.section6 .main_info_wrap article.hover_card:hover .card_img {
+  transform: scale(1.05);
+}
+.section6 .main_info_wrap article:not(.hover_card) {
+  opacity: 0.5;
+  flex: 1;
+}
+.section6 .main_info_wrap article:not(.hover_card) .card_txt {
+  opacity: 0;
+}
+.section6 .main_info_wrap .info_card_wrap {
+  height: 60rem;
+  width: 100%;
+  border-radius: 3rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.section6 .main_info_wrap .info_card_wrap .card_img {
+  height: 60rem;
+  width: 100%;
+  border-radius: 3rem;
+  background: no-repeat center/cover;
+  transition: 0.3s ease-in;
+}
+.section6 .main_info_wrap .info_card_wrap:nth-of-type(1) .card_img {
+  background-image: url("../img/card1.jpg");
+}
+.section6 .main_info_wrap .info_card_wrap:nth-of-type(2) .card_img {
+  background-image: url("../img/card2.jpg");
+}
+.section6 .main_info_wrap .info_card_wrap:nth-of-type(3) .card_img {
+  background-image: url("../img/card3.jpg");
+}
+.section6 .main_info_wrap .card_txt {
+  position: absolute;
+  top: 10rem;
+  right: 5rem;
+  transition: 0.5s ease-in;
+  color: #fff;
+  text-align: right;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+  z-index: 1;
+}
+.section6 .main_info_wrap .card_txt span {
+  font-size: 2.8rem;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.6);
+}
+.section6 .main_info_wrap .card_txt h3 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  margin: 0.5rem 0 3rem;
+}
+.section6 .main_info_wrap .card_txt p {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
+.section6 .main_info_wrap .card_txt .long_arrow {
+  height: 0.2rem;
+  width: 25rem;
+  border-radius: 0;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 0.3s;
+}
+.section6 .main_info_wrap .card_txt .long_arrow::after {
+  height: 0.2rem;
+  width: 2.5rem;
+  border-radius: 0;
+  display: block;
+  content: "";
+  background-color: #fff;
+  transform: rotate(40deg);
+  position: absolute;
+  right: -3px;
+  bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .section6 .main_info_wrap {
+    width: 100%;
+    padding-bottom: 10rem;
+  }
+  .section6 .main_info_wrap article.hover_card {
+    flex: 4;
+  }
+  .section6 .main_info_wrap .info_card_wrap {
+    height: 50rem;
+  }
+  .section6 .main_info_wrap .card_txt {
+    top: 8rem;
+    right: 3rem;
+  }
+  .section6 .main_info_wrap .card_txt span {
+    font-size: 1.8rem;
+  }
+  .section6 .main_info_wrap .card_txt h3 {
+    font-size: 3.8rem;
+  }
+  .section6 .main_info_wrap .card_txt p {
+    font-size: 2rem;
+  }
+  .section6 .main_info_wrap .card_txt .long_arrow {
+    height: 0.2rem;
+    width: 18rem;
+    border-radius: 0;
+  }
+}
 /* 메뉴 서브페이지 헤더 */
 main.menu_main .de_header {
   background: url("../img/menu_visual.jpg") center 10%;
