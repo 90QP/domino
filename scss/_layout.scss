@@ -234,3 +234,198 @@ header {
   }
 
 }
+
+
+
+
+/* 푸터 - PC(1440) */
+
+footer {
+  background-color: $blue;
+
+  .footer_wrap {
+    @include set-1440(auto);
+    color:#fff;
+    padding: 2rem 0;
+
+    .footer_section1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .footer_logo {
+        img {width: 32rem;}
+        h2 {
+          display: inline-block;
+          font-size: 3rem;
+          margin-left:1rem;
+        }
+      }
+      .footer_nav {
+        li {
+          display: inline-block;
+          font-size: 1.2rem;
+          margin-left:0.5rem;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+    .footer_section2 {
+      display: flex;
+      justify-content: space-between;
+      .footer2_left {
+        .footer_info {
+          font-size: 1.3rem;
+          margin: 5rem 0;
+        }
+        address {
+          font-size: 1.3rem;
+          font-style: normal;
+          color:rgba(255,255,255,0.6)
+        }
+      }
+      .footer2_right {
+        .footer_prize {
+          display: flex;
+          gap: 2rem;
+          margin: 5rem 0 10rem;
+          .prize_card {
+            display: flex;
+            gap: 1rem;
+            img {
+              width: 3rem;
+            }
+            p {
+              font-size: 1.2rem;
+            }
+          }
+        }
+
+        .footer_sns {
+          text-align: right;
+          a {
+            display: inline-block;
+            @include set-box(3rem,3rem);
+            margin-left: 2rem;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width:1210px){
+  footer {
+    .footer_wrap {
+      width: 100%;
+      padding:2rem;
+  
+      .footer_section1 {
+        .footer_logo {
+          img {width: 30rem;}
+        }
+        .footer_nav {
+          ul { 
+            width: 40rem;
+            text-align: right;
+          }
+        }
+      }
+      .footer_section2 {
+        .footer2_left {
+          .footer_info {
+            font-size: 1.2rem;
+          }
+          address {
+            font-size: 1.1rem;
+          }
+        }
+        .footer2_right {
+          .footer_prize {
+            display: flex;
+            gap: 1rem;
+            margin: 5rem 0 10rem;
+            .prize_card {
+              img {
+                width: 2.5rem;
+              }
+              p {
+                font-size: 1.1rem;
+              }
+            }
+          }
+  
+          .footer_sns {
+            text-align: right;
+            a {
+              display: inline-block;
+              @include set-box(3rem,3rem);
+              margin-left: 2rem;
+            }
+          }
+        }
+      }
+  
+    }
+  }
+}
+@media (max-width:940px){
+  footer {
+    .footer_wrap {
+      position: relative;
+      .footer_section1 {
+        .footer_nav {
+          display: none;
+        }
+      }
+      .footer_section2 {
+        .footer2_right {
+          .footer_prize {
+            display: none;
+          }
+  
+          .footer_sns {
+            position: absolute;
+            top:6rem;
+            right: 2rem;
+            }
+          }
+        }
+      }
+  
+    }
+}
+@media (max-width:768px){
+  footer {
+    .footer_wrap {
+      position: relative;
+      .footer_section1 {
+        .footer_logo {
+          img {
+            width: 15rem;
+          }
+          h2 {
+            font-size: 2rem;
+          }
+        }
+      }
+      .footer_section2 {
+        .footer2_left {
+          display: none;
+        }
+        .footer2_right {
+          .footer_sns {
+            position: absolute;
+            top:calc(50% - 1rem);
+            right: 2rem;
+            a {
+              width: 2rem;
+              margin-left: 1rem;
+            }
+            }
+          }
+        }
+      }
+  
+    }
+}

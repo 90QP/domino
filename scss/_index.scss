@@ -1,10 +1,5 @@
 @charset 'UTF-8';
 
-
-.red{ color:$red }
-.blue{ color:$blue }
-.black{ color:$black }
-
 /* 비쥬얼 */
 #visual {
   @include set-box(100vh,100%);
@@ -21,7 +16,6 @@
 
 }
 
-/* 헤더 768px */
 @media (max-width:768px){
   #visual {
     video {
@@ -34,18 +28,22 @@
 }
 
 
-
 /* ========= main ========= */
 
 /* section1 - 주문 버튼 */
 .section1 { 
   .main_order {
-  position: relative; top:-13rem;
+  position: relative; top:0;
   max-width:92rem; margin: auto;
   background: #ffffff;
   border-radius: 3rem;
   padding:5rem 0;
   box-shadow:$shadow;
+  transition: 0.5s;
+
+  &.order_scroll {
+    top:-13rem;
+  }
 
     ul {
     display: flex;
@@ -74,17 +72,42 @@
   }
   
 }
-  @media (max-width:768px){
+@media (max-width:1024px){
+  .section1 {
+    .main_order {
+      margin: 0 5rem;
+      ul {
+        li {
+          .order_wrap {
+            .main_order_h3 {
+              font-size: 4rem;
+            }
+            .main_order_p { 
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:768px){
   .section1 { 
     .main_order {
+      margin: 0 2rem;
+      padding: 3rem 0;
+      text-align: center;
             ul {
               li { 
               .order_wrap {
-        
-                .main_order_img {
-                }
+                margin-left:0;
+
                 .main_order_h3 {
                   font-size: 3rem;
+                  line-height: 150%;
+                  i {
+                    display: block;
+                  }
                 }
                 .main_order_p { 
                     display: none;
@@ -95,7 +118,6 @@
         }
     }
 }
-
 
 /* section2 - 메인 피자 메뉴 */
 .section2 {
@@ -127,8 +149,6 @@
       }
   
   @media (max-width:768px){
-    .swiper-wrapper{
-    }
       .swiper-slide { 
         text-align: center; display: inline-block;
                 .swiper-slide img { width:30rem; height: 30rem;  }
@@ -139,7 +159,7 @@
     
 }
 
-/* section3 */
+/* section3 - 도미노피자(흑백이미지) */
 .section3 { 
   margin-top: 20rem;
 
@@ -148,7 +168,7 @@
   }
 }
 
-/* section4*/
+/* section4 - 이벤트& 프로모션 */
 .section4 {
   h2 { 
     letter-spacing:1;
@@ -165,7 +185,6 @@
     gap: 2rem;
     margin: 0 4.5rem;
 
-    .event_pc_left {}
     .event_pc_center {
       display: flex;
       flex-direction: column;
@@ -236,6 +255,269 @@
         display: block;
         & + a {
           margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+
+/* section5 - 매장 찾기*/
+.section5 {
+  margin: 20rem 0;
+  background: url('../img/search_bg.jpg') no-repeat center / cover ;
+  .main_search_wrap {
+    @include set-1440(50rem);
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 4.8rem;
+      letter-spacing: 1px;
+    }
+    span {
+      font-size: 4rem;
+      font-weight: 100;
+    }
+    p {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: -0.25px;
+      margin:5rem 0;
+    }
+
+  }
+  .serachBar_wrap {
+    width: 70vw;
+    max-width: 1000px;
+    position: relative;
+    input#searchBar {
+      @include set-box(7rem,100%,7rem);
+      border: none;
+      outline: none;
+      font-size: 2rem;
+      padding-left:3rem;
+
+      &::placeholder {
+        font-family: "Pretendard Variable", sans-serif;
+        font-size: 2rem;
+      }
+    }
+    button.searchBtn {
+      @include set-box(5.7rem,5.7rem,5rem);
+      border: none;
+      outline: none;
+      background-color: $red;
+      position: absolute;
+      top:0.6rem;
+      right:0.5rem;
+      cursor: pointer;
+      img {
+        width: 3rem;
+      }
+    }
+  }
+}
+@media (max-width:1024px){
+  .section5 {
+    .main_search_wrap {
+      width: 100%;
+    }
+    .serachBar_wrap {
+      width: 90%;
+      input#searchBar {
+        @include set-box(5.5rem,100%,5.5rem);
+      }
+      button.searchBtn {
+        @include set-box(4.5rem,4.5rem,5rem);
+        top:0.5rem;
+        right:0.7rem;
+        img {
+          width: 2.5rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width:768px){
+  .section5 {
+    margin: 12rem 0;
+    .main_search_wrap {
+      width: 100%;
+      align-items: baseline;
+      padding-left: 5rem;
+      h2 {
+        font-size: 3.2rem;
+        letter-spacing: 1px;
+      }
+      span {
+        font-size: 2.8rem;
+        font-weight: 100;
+      }
+      p {
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: -0.25px;
+        margin:4rem 0;
+      }
+    }
+    .serachBar_wrap {
+      input#searchBar {
+        @include set-box(5rem,100%,5rem);
+        font-size: 1.6rem;
+        &::placeholder {
+          font-size: 1.6rem;
+        }
+      }
+      button.searchBtn {
+        @include set-box(4rem,4rem,5rem);
+        top:0.5rem;
+        right:0.7rem;
+        img {
+          width: 2rem;
+        }
+      }
+    }
+  }
+}
+
+/* section6 - 도미노 stroy */
+.section6 {
+  .main_info_wrap {
+    @include set-1440(auto);
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 20rem;
+
+    article.hover_card {
+      flex:2;
+      .card_txt {
+        opacity: 1;
+      }
+
+      &:hover {
+        .card_txt {
+          .long_arrow {
+            transform: translateX(10px);
+          }
+        }
+        .card_img {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    article:not(.hover_card) {
+      opacity: 0.5;
+      flex:1;
+      .card_txt {
+        opacity: 0;
+      }
+    }
+
+    .info_card_wrap { 
+      @include set-box(60rem,100%,3rem);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: 0.5s;
+
+      .card_img {
+        @include set-box(60rem,100%,3rem);
+        background: no-repeat center / cover;
+        transition: 0.3s ease-in;
+      }
+
+      &:nth-of-type(1) {
+        .card_img { background-image: url('../img/card1.jpg'); }
+      }
+      &:nth-of-type(2) {
+        .card_img { background-image: url('../img/card2.jpg'); }
+      }
+      &:nth-of-type(3) {
+        .card_img { background-image: url('../img/card3.jpg'); }
+      }
+    }
+
+    .card_txt {
+      position: absolute;
+      top: 10rem;
+      right: 5rem;
+      transition: 0.5s ease-in;
+      color:#fff; 
+      text-align: right;
+      text-shadow: 0 0 10px rgba(0,0,0,1);
+      z-index: 1;
+
+      span {
+        font-size: 2.8rem;
+        font-weight: 100;
+        color:rgba(255,255,255,0.6)
+      }
+      h3 {
+        font-size: 4.8rem;
+        font-weight: 400;
+        margin: 0.5rem 0 3rem;
+      }
+      p {
+        font-size: 2.2rem;
+        font-weight: 300;
+        margin-bottom: 5rem
+      }
+      .long_arrow {
+        @include set-box(0.2rem,25rem);
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: 0.3s;
+
+        &::after {
+          @include set-box(0.2rem,2.5rem);
+          display: block;
+          content: "";
+          background-color: #fff;
+          transform: rotate(40deg);
+          position: absolute;
+          right: -3px;
+          bottom: 8px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width:768px){
+  .section6 {
+    .main_info_wrap {
+      width: 100%;
+      padding-bottom: 10rem;
+
+      article.hover_card {
+        flex:4;
+      }
+
+      .info_card_wrap {
+        height: 50rem;
+      }
+      .card_txt {
+        top: 8rem;
+        right: 3rem;
+
+        span {
+          font-size: 1.8rem;
+        }
+        h3 {
+          font-size: 3.8rem;
+        }
+        p {
+          font-size: 2.0rem;
+        }
+        .long_arrow {
+          @include set-box(0.2rem,18rem);
         }
       }
     }
