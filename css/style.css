@@ -1232,6 +1232,7 @@ main.menu_main .de_menu .select_bar {
   display: flex;
   justify-content: center;
   gap: 5rem;
+  margin: 10rem 0;
 }
 .de_visual .de_visualPc {
   height: 60rem;
@@ -1457,6 +1458,7 @@ main.menu_main .de_menu .select_bar {
 @media (max-width: 768px) {
   .de_visual {
     display: block;
+    margin-top: 6rem;
   }
   .de_visual .de_visual_img {
     margin-bottom: 5rem;
@@ -1468,6 +1470,9 @@ main.menu_main .de_menu .select_bar {
     display: block;
     height: 26rem;
     margin: auto;
+  }
+  .de_visual .de_visual_op {
+    margin-bottom: 5rem;
   }
   .de_visual .de_visual_op .op_txt {
     margin: 0 auto 3rem;
@@ -1511,8 +1516,14 @@ main.menu_main .de_menu .select_bar {
   .de_visual .de_visual_op .de_option .op_sel_mo .sel_mo form input[type=radio]:checked {
     accent-color: #E71C29;
   }
+  .de_visual .de_visual_op .de_option .op_sel_mo .sel_mo form input[type=radio]:checked + label {
+    color: #E71C29;
+  }
   .de_visual .de_visual_op .de_option .op_sel_mo .sel_mo form input[type=checkbox]:checked {
     accent-color: #E71C29;
+  }
+  .de_visual .de_visual_op .de_option .op_sel_mo .sel_mo form input[type=checkbox]:checked + label {
+    color: #E71C29;
   }
   .de_visual .de_visual_op .de_option .op_sel_mo .sel_mo form label {
     margin: 0 0 1rem 2rem;
@@ -1521,6 +1532,298 @@ main.menu_main .de_menu .select_bar {
     width: 90%;
     justify-content: space-between;
     align-items: center;
+  }
+  .de_visual .de_visual_op .op_total {
+    margin: 4rem auto 5rem;
+    width: 45rem;
+    padding: 0 4rem;
+  }
+  .de_visual .de_visual_op .op_buy {
+    text-align: center;
+  }
+  .de_visual .de_visual_op .op_buy .buy_btn {
+    font-size: 2.5rem;
+    width: 25rem;
+    height: 7rem;
+  }
+  .de_visual .de_visual_op .op_buy .buy_btn:last-child {
+    display: none;
+  }
+}
+.loMain {
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 15.7rem;
+}
+.loMain > p {
+  font-size: 5.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.loMain .loMain_mem {
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+  margin-bottom: 4.7rem;
+}
+.loMain .loMain_mem > a {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.loMain .loMain_mem > a:first-child {
+  color: #E71C29;
+}
+.loMain .loMain_con {
+  width: 80rem;
+  height: 56.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 8.7rem;
+  margin: 0 auto 10rem;
+  padding: 0 3rem;
+  display: flex;
+}
+.loMain .loMain_con .con_general {
+  margin: 10rem 0 10rem;
+  flex: 1;
+  text-align: center;
+}
+.loMain .loMain_con .con_general > p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+}
+.loMain .loMain_con .con_general .lo_input {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.loMain .loMain_con .con_general .lo_input input {
+  width: 24rem;
+  height: 5rem;
+  border: 1px solid #DFDFDF;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0 2.3rem;
+  color: #000;
+}
+.loMain .loMain_con .con_general .lo_input input::placeholder {
+  color: #bebebe;
+  font-size: 1.2rem;
+}
+.loMain .loMain_con .con_general .lo_input input:first-child {
+  margin-bottom: 0.5rem;
+}
+.loMain .loMain_con .con_general .lo_check {
+  display: flex;
+  justify-content: space-between;
+  width: 24rem;
+  margin: 0 auto 3.8rem;
+  font-size: 1.4em;
+}
+.loMain .loMain_con .con_general .lo_check input[type=checkbox] {
+  position: relative;
+  top: 0.2rem;
+}
+.loMain .loMain_con .con_general .lo_check label {
+  cursor: pointer;
+}
+.loMain .loMain_con .con_general .lo_check label:hover {
+  color: #808080;
+}
+.loMain .loMain_con .con_general .lo_check a:hover {
+  color: #808080;
+}
+.loMain .loMain_con .con_general .lo_btn a {
+  background: #E71C29;
+  display: block;
+  margin: auto;
+  width: 24rem;
+  height: 5.2rem;
+  border-radius: 5.4rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+}
+.loMain .loMain_con .con_general .lo_btn a:last-child {
+  background: #cfcfcf;
+  margin-top: 0.5rem;
+}
+.loMain .loMain_con .con_social {
+  margin: 10rem 0 10rem;
+  border-left: 0.2rem dashed #EEEEEE;
+  flex: 1;
+  text-align: center;
+}
+.loMain .loMain_con .con_social > p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+}
+.loMain .loMain_con .con_social .so_con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 5rem;
+}
+.loMain .loMain_con .con_social .so_con .so_img {
+  margin: 0 1rem 1rem;
+}
+.loMain .loMain_con .con_social .so_con .so_img > a {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.loMain .loMain_con .con_social .so_con .so_img > p {
+  font-size: 1.5rem;
+}
+.loMain .loMain_con .con_social .so_con img {
+  width: 11rem;
+}
+
+.loNoti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loNoti .loNoti_wrap {
+  position: relative;
+  background: #fff;
+  width: 67rem;
+  height: 34.5rem;
+  text-align: center;
+  padding: 7rem;
+  border-radius: 6rem;
+}
+.loNoti .loNoti_wrap p:first-child {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+.loNoti .loNoti_wrap .loNoti_info {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+.loNoti .loNoti_wrap .loNoti_info br {
+  display: none;
+}
+.loNoti .loNoti_wrap .loNoti_info span {
+  color: #E71C29;
+}
+.loNoti .loNoti_wrap .loNoti_btn a {
+  display: inline-block;
+  width: 22rem;
+  height: 5rem;
+  background: #CFCFCF;
+  border-radius: 5.4rem;
+  font-size: 2rem;
+  color: #fff;
+  line-height: 5rem;
+}
+.loNoti .loNoti_wrap .loNoti_btn a:last-child {
+  background: #2471B4;
+  margin-left: 1.5rem;
+}
+.loNoti .loNoti_wrap .loNoti_close {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: -3rem;
+  right: -2rem;
+}
+
+@media (max-width: 768px) {
+  .loMain {
+    margin-top: 13rem;
+  }
+  .loMain > p {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+  .loMain .loMain_mem {
+    gap: 4.5rem;
+    margin-bottom: -5rem;
+  }
+  .loMain .loMain_mem > a {
+    font-size: 2.5rem;
+  }
+  .loMain .loMain_con {
+    width: 55rem;
+    height: 71rem;
+    display: block;
+  }
+  .loMain .loMain_con .con_general {
+    padding-top: 5rem;
+  }
+  .loMain .loMain_con .con_general .lo_input {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  .loMain .loMain_con .con_general .lo_input input {
+    height: 4.5rem;
+  }
+  .loMain .loMain_con .con_general .lo_btn a {
+    background: #E71C29;
+    display: block;
+    margin: auto;
+    width: 24rem;
+    height: 5.2rem;
+    border-radius: 5.4rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+  }
+  .loMain .loMain_con .con_general .lo_btn a:last-child {
+    background: #cfcfcf;
+    margin-top: 0.5rem;
+  }
+  .loMain .loMain_con .con_social {
+    position: relative;
+  }
+  .loMain .loMain_con .con_social > p {
+    color: #BEBEBE;
+    font-weight: 500;
+  }
+  .loMain .loMain_con .con_social .so_con {
+    padding: 0 5rem;
+  }
+  .loMain .loMain_con .con_social .so_con img {
+    width: 6.6rem;
+  }
+  .loNoti .loNoti_wrap {
+    width: 32.2rem;
+    height: 45rem;
+    padding: 6rem 4rem;
+  }
+  .loNoti .loNoti_wrap p:first-child {
+    font-size: 2.5rem;
+  }
+  .loNoti .loNoti_wrap .loNoti_info {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .loNoti .loNoti_wrap .loNoti_info br {
+    display: block;
+  }
+  .loNoti .loNoti_wrap .loNoti_btn a {
+    width: 16rem;
+    height: 4.8rem;
+  }
+  .loNoti .loNoti_wrap .loNoti_btn a:last-child {
+    background: #2471B4;
+    margin: 1.5rem 0;
   }
 }
 
