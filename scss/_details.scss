@@ -54,6 +54,12 @@
           color: #fff;
           
         }
+
+        
+        &.stop {
+          background: $red;
+          color: #fff;
+        }
       }
       .size_btn:first-child {
         margin-right: 3rem;
@@ -200,11 +206,13 @@
         .size_btn {
           font-size: 1.8rem;
           padding: 0.8rem 1.8rem;
+
         }
         .size_btn:first-child {
           margin-right: 1.8rem;
         }
       }
+
       .op_sel {
         .op_select {
           margin-bottom: 2rem;
