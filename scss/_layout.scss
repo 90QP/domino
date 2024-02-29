@@ -444,3 +444,37 @@ footer {
   
     }
 }
+
+
+/* 탑버튼 */
+
+.top_btn {
+  @include set-box(6rem,6rem,50%);
+  position: fixed;
+  bottom: 3rem;
+  right: -10rem;
+  background: transparent url('../img/top.png') no-repeat center / 45% ;
+  z-index: 99999;
+  transition: 0.2s;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  cursor: pointer;
+
+  &:hover {
+    background: #111 url('../img/top_white.png') no-repeat center / 45% ;
+  }
+
+  &.active {
+    right: 3rem;
+  }
+}
+
+@media (max-width:768px){
+  .top_btn {
+    @include set-box(5rem,5rem,50%);
+    bottom: 1rem;
+
+  &.active {
+      right: 1rem;
+    }
+  }
+}
