@@ -1370,6 +1370,10 @@ main.menu_main .de_menu .select_bar {
   background: #E71C29;
   color: #fff;
 }
+.de_visual .de_visual_op .op_size .size_btn.stop {
+  background: #E71C29;
+  color: #fff;
+}
 .de_visual .de_visual_op .op_size .size_btn:first-child {
   margin-right: 3rem;
 }
