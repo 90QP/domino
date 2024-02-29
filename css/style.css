@@ -756,6 +756,9 @@ footer .footer_wrap .footer_section2 .footer2_right .footer_sns a {
 .section5 .serachBar_wrap button.searchBtn img {
   width: 3rem;
 }
+.section5 .serachBar_wrap button.searchBtn:hover {
+  opacity: 0.7;
+}
 
 @media (max-width: 1024px) {
   .section5 .main_search_wrap {
