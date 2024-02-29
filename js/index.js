@@ -61,3 +61,92 @@ infoCard.forEach((card)=>{
     card.classList.remove('hover_card');infoCard[1].classList.add('hover_card')
   })
 })
+
+
+
+
+//gsap
+let funcObj = {
+
+  section2 : function(){
+    const tl = gsap.timeline(); 
+
+    tl.to('.section2 h2 ' , { 
+      opacity:1,
+      duration:0.5, 
+      y: 0,
+    }) ,
+
+    tl.to('.section2 .swiper-wrapper > * ' , { 
+      opacity:1,
+      duration:0.5, 
+      stagger: 0.2, 
+      y: 0,
+    }) 
+  },
+
+  section3 : function(){
+    const tl = gsap.timeline(); 
+
+    tl.to('.section3 > * ' , { 
+      opacity:1,
+      duration:1, 
+      y: -30,
+    }) 
+  },
+
+  section4 : function(){
+    const tl = gsap.timeline(); 
+
+    tl.to('.section4 h2 ' , { 
+      opacity:1,
+      duration:1, 
+      y: 0,
+  }) ,
+
+    tl.to('.section4 > div' , { 
+      opacity:1,
+      duration:1, 
+      stagger: 0.3, 
+      y: 0,
+    })
+  },
+
+  section5 : function(){
+    const tl = gsap.timeline(); 
+
+    tl.to('.section5 .main_search_wrap > * ' , { 
+      opacity:1,
+      duration:1, 
+      stagger: 0.3, 
+      y: 0,
+    }) 
+  },
+
+  section6 : function(){
+    const tl = gsap.timeline(); 
+
+    tl.to('.section6 > .main_info_wrap > article ' , { 
+      duration:1, 
+      stagger: 0.3, 
+      y: 0,
+    }) 
+  }
+}
+
+
+const sections = document.querySelectorAll('section');
+const io = new IntersectionObserver((entries, observer)=>{
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting){
+      console.log(entry.target.classList.value)
+      const objName = entry.target.classList.value
+      if (objName === 'section1') {
+        return
+      } else { funcObj[objName](); }
+      
+    }
+  })
+})
+
+sections.forEach( section => io.observe(section))
