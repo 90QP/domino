@@ -190,6 +190,18 @@ main.menu_main {
     }
   }
 }
+@media (max-width:390px){
+  .caution_wrap {
+    .caution2 {
+      flex-direction: column;
+      gap: 2rem;
+
+      .menu_btn {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
 
 /* 피자 목록 */
 .menu_list_wrap {
@@ -258,6 +270,7 @@ main.menu_main {
   
         li {
           width: 100%;
+          height: 20rem;
           padding: 0;
           border-radius: 2.2rem;
           overflow: hidden;
@@ -269,7 +282,12 @@ main.menu_main {
             gap:1rem;
             background-color: #fff; }
           img {
-            width: 42%;
+            height: 20rem;
+            object-fit: cover;
+          }
+
+          .menu_txt {
+            padding: 2rem 2rem 2rem 1rem;
           }
           
           .menu_name {
@@ -298,7 +316,36 @@ main.menu_main {
     }
   }
 }
+@media (max-width:390px){
+  .menu_list_wrap {
+    width: 100%;
 
+    .menu_list {
+      padding: 2rem;
+  
+      .menu_ul {
+        li {
+          height: auto;
+          a { 
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap:1rem;
+            background-color: #fff; }
+          img {
+            height: 20rem;
+            width: 100%;
+          }
+
+          .menu_txt {
+            padding: 2rem;
+          }
+          
+        }
+      }
+    }
+  }
+}
 
 /* side */
 .menu_list_wrap {

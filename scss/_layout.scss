@@ -398,6 +398,7 @@ footer {
 @media (max-width:768px){
   footer {
     .footer_wrap {
+      padding: 5rem 2rem;
       position: relative;
       .footer_section1 {
         .footer_logo {
@@ -425,6 +426,20 @@ footer {
             }
           }
         }
+      }
+  
+    }
+}
+@media (max-width:390px){
+  footer {
+    .footer_wrap {
+      .footer_section1 {
+        .footer_logo {
+          h2 {
+            display: none;
+          }
+        }
+      } 
       }
   
     }
