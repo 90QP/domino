@@ -255,87 +255,6 @@
   }
 }
 
-// @media(max-width:768px) {
-//   .de_visual {
-//     display: block;
-//     .de_visual_img {
-//       margin-bottom: 5rem;
-//       .de_visualPc {
-//         display: none;
-//       }
-//       .de_visualMo {
-//         display: block;
-//         height: 26rem;
-//         margin: auto;
-//       }
-//     }
-//     .de_visual_op {
-//       .op_txt {
-//         margin: 0 auto 3rem;
-//         width: 50rem;
-//         padding: 0 1rem;
-//         p {
-//           font-weight: 700;
-//         }
-//       }
-//       .de_option {
-//         background: #F5F5F5;
-//         .op_size {
-//           border: none;
-//           margin: 0;
-//           padding: 0;
-//           .size_btn{
-//             display: none;
-//           }
-//         }
-//         .op_sel {
-//           display: none;
-//         }
-//         .op_sel_mo {
-//           display: block;
-//           margin:auto;
-//           width: 45rem;
-//           padding: 2.5rem 2rem;
-//           &>div {
-//             margin-bottom: 2rem;
-//           }
-//           .sel_mo {
-//             p {
-//               font-size: 2rem;
-//               font-weight: 700; 
-//               margin-bottom: 1.5rem;
-//             }
-//             form {
-//               padding: 0 2rem;
-//               input[type="radio"]:checked {
-//                 accent-color: $red;
-//               }
-//               input[type="checkbox"]:checked {
-//                 accent-color: $red;
-//               }
-//               label {
-//                 margin: 0 0 1rem 2rem;
-//                 font-size: 1.6rem;
-//                 display: inline-flex;
-//                 width: 90%;
-//                 justify-content: space-between;
-//                 align-items: center;
-//                 span {
-//                 }
-//                 &:checked {
-//                 }
-//               }
-//             }
-//           }
-          
-//         }
-//       }
-//     }
-
-//   }
-  
-// }
-
 
 
 @media(max-width:768px) {
@@ -391,6 +310,18 @@
               font-size: 2rem;
               font-weight: 700; 
               margin-bottom: 1.5rem;
+            }
+            &.edge {
+              position: relative;
+            }
+            &.edge > .edge_info {
+              font-size: 1rem;
+              font-weight: 700;
+              color: $red;
+              position: absolute;
+              top: 1rem;
+              left: 8rem;
+              
             }
             form {
               padding: 0 2rem;
