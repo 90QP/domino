@@ -1,38 +1,9 @@
 @charset "UTF_8";
 
 
-/*tap 넣어보려 했는데 안되네,,*/
-// main > .search_page {max-width: 100%; margin:auto; }
-
-// .search_header li {
-//   cursor: pointer;
-//   &:last-child {border-right:none;}
-// }
-
-// .search_header li.active {
-//   color:red;
-// }
-
-// .tabBody > section {
-// display:flex; 
-//   justify-content: center; 
-//   align-items: center;
-
-//   .map {}
-//   .bestshop {}
-// }
-
-.active {color:$red; 
-  }
-
-  body{
-    height:200vh;
-  }
+.active {color:$red;}
 /*main*/  
-main { 
-}
 main.search_main { 
-
   background: rgb(255, 255, 255);
   z-index: 90;
 
@@ -65,8 +36,6 @@ main.search_main {
     li {
       &:hover {
         color:$gray1;
-      }
-      a {
       }
     }
   }
@@ -169,11 +138,6 @@ main.search_main {
         min-width: auto;
         justify-content: center;
         flex-wrap: wrap;
-        li {
-          a {
-
-          }
-        }
       }
     
       .select_bar {
@@ -217,11 +181,6 @@ main.search_main {
         min-width: auto;
         justify-content: center;
         flex-wrap: wrap;
-        li {
-          a {
-
-          }
-        }
       }
     
       .select_bar {
@@ -543,7 +502,7 @@ main.search_main {
           }
         }
 
-       }
+        }
     }
   }
   
@@ -551,11 +510,6 @@ main.search_main {
 
 /* section 반응형 - 630px */
 @media (max-width:630px) {
-  .search1 {
-
-
-    }
-
   .map_popup_scroll {
     position: relative; 
       overflow: auto; 
@@ -591,22 +545,6 @@ main.search_main {
           }
     }
 
-    // .button_wrap {  
-    //    margin: none;
-    //   font-size: 1.5rem; 
-    //   a {  position: relative;
-    //     display: flex;margin-bottom: 2rem;
-    //     border:none; background:#F2F2F2 ;
-    //     border-radius:0.7rem ;
-    //     padding:1.5rem 3.2rem; cursor: pointer;
-    //     transition: 0.3s;
-    //     &:hover {
-    //       background: $black;
-    //       color:#fff;
-    //       font-weight: bold;
-    //     }
-    //   }
-    // }
   }
 }
 /* section 반응형 - 450px */
