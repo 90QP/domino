@@ -445,6 +445,38 @@ footer .footer_wrap .footer_section2 .footer2_right .footer_sns a {
     display: none;
   }
 }
+/* 탑버튼 */
+.top_btn {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 3rem;
+  right: -10rem;
+  background: transparent url("../img/top.png") no-repeat center/45%;
+  z-index: 99999;
+  transition: 0.2s;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.top_btn:hover {
+  background: #111 url("../img/top_white.png") no-repeat center/45%;
+}
+.top_btn.active {
+  right: 3rem;
+}
+
+@media (max-width: 768px) {
+  .top_btn {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    bottom: 1rem;
+  }
+  .top_btn.active {
+    right: 1rem;
+  }
+}
 /* 비쥬얼 */
 #visual {
   height: 100vh;
@@ -957,6 +989,16 @@ footer .footer_wrap .footer_section2 .footer2_right .footer_sns a {
     border-radius: 0;
   }
 }
+/* gsap */
+.section2 h2, .section2 .swiper-wrapper > *, .section3 > *, .section4 h2, .section4 > div, .section5 .main_search_wrap > * {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.section6 > .main_info_wrap > article {
+  transform: translateY(30px);
+}
+
 /* 메뉴 서브페이지 헤더 */
 main.menu_main .de_header {
   background: url("../img/menu_visual.jpg") center 10%;
@@ -1356,7 +1398,7 @@ main.menu_main .de_menu .select_bar {
 .de_visual .de_visual_op .op_sel .op_select .select {
   border: none;
   outline: none;
-  font-family: "Pretendard-Regular", sans-serif;
+  font-family: "Pretendard Variable", sans-serif;
   font-size: 1.6rem;
   width: 40rem;
   background: #f5f5f5;
@@ -1557,6 +1599,17 @@ main.menu_main .de_menu .select_bar {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
+  }
+  .de_visual .de_visual_op .de_option .op_sel_mo .sel_mo.edge {
+    position: relative;
+  }
+  .de_visual .de_visual_op .de_option .op_sel_mo .sel_mo.edge > .edge_info {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #E71C29;
+    position: absolute;
+    top: 1rem;
+    left: 8rem;
   }
   .de_visual .de_visual_op .de_option .op_sel_mo .sel_mo form {
     padding: 0 2rem;
@@ -1905,6 +1958,506 @@ main.menu_main .de_menu .select_bar {
   .loNoti .loNoti_wrap .loNoti_btn a:last-child {
     background: #2471B4;
     margin: 1.5rem 0;
+  }
+}
+/*tap 넣어보려 했는데 안되네,,*/
+.active {
+  color: #E71C29;
+}
+
+/*main*/
+main.search_main {
+  background: rgb(255, 255, 255);
+  /* 매장 서브페이지 헤더 */
+}
+main.search_main .search_header {
+  z-index: 50;
+  height: 40rem;
+  text-align: center;
+  padding-top: 16.7rem;
+  transition: 0.3s ease;
+}
+main.search_main .search_header p {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 5.5rem;
+  color: #322F2F;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+main.search_main .search_header ul {
+  display: flex;
+  justify-content: center;
+  color: #322F2F;
+}
+main.search_main .search_header ul li:hover {
+  color: #7F8085;
+}
+main.search_main .search_header {
+  max-width: 1440px;
+  height: 8rem;
+  margin: 0 auto;
+  margin-bottom: 14rem;
+  position: relative;
+}
+main.search_main .search_header ul {
+  display: flex;
+}
+main.search_main .search_header ul li a {
+  display: inline-block;
+  font-weight: 600;
+  padding: 0 3rem;
+  line-height: 8rem;
+  transition: 0.3s;
+}
+main.search_main .search_header ul li.selected a {
+  color: #fff;
+}
+main.search_main .search_header .select_bar {
+  height: 4rem;
+  width: 0;
+  border-radius: 8rem;
+  background-color: #2471B4;
+  position: absolute;
+  top: calc(50% - 2rem);
+  transition: 0.3s ease-out;
+  z-index: -1;
+}
+
+.search_header {
+  width: 100%;
+  background: #fff;
+  padding-top: 15rem;
+}
+.search_header p {
+  font-size: 4rem;
+  font-weight: 900;
+}
+.search_header ul {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+/* 매장찾기 서브페이지 헤더 - 1024px */
+@media (max-width: 1024px) {
+  .search_header {
+    width: 100%;
+    background: #fff;
+    padding-top: 15rem;
+  }
+  .search_header p {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  .search_header ul {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+}
+/* 매장찾기 서브페이지 헤더 - 768px */
+@media (max-width: 768px) {
+  main.search_main .search_header {
+    width: 100%;
+    background: #fff;
+    padding-top: 15rem;
+  }
+  main.search_main .search_header p {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  main.search_main .search_header ul {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  main.search_main .de_menu_wrap {
+    height: 6rem;
+    border-bottom: 1px solid #D8DCE0;
+  }
+  main.search_main .de_menu {
+    max-width: 1440px;
+    height: 6rem;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+  }
+  main.search_main .de_menu ul {
+    min-width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main.search_main .de_menu .select_bar {
+    height: 3rem;
+    width: 0;
+    border-radius: 8rem;
+    background-color: #2471B4;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    transition: 0.3s ease-out;
+    z-index: -1;
+  }
+}
+/* 매장 서브페이지 헤더 - 440px */
+@media (max-width: 440px) {
+  main.search_main .search_header {
+    width: 100%;
+    background: #fff;
+    padding-top: 15rem;
+  }
+  main.search_main .search_header p {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  main.search_main .search_header ul {
+    font-size: 2.3rem;
+    font-weight: 900;
+  }
+  main.search_main .de_menu_wrap {
+    height: 6rem;
+    border-bottom: 1px solid #D8DCE0;
+  }
+  main.search_main .de_menu {
+    max-width: 1440px;
+    height: 6rem;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+  }
+  main.search_main .de_menu ul {
+    min-width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main.search_main .de_menu .select_bar {
+    height: 3rem;
+    width: 0;
+    border-radius: 8rem;
+    background-color: #2471B4;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    transition: 0.3s ease-out;
+    z-index: -1;
+  }
+}
+/*      section             */
+.map {
+  border: 1px solid red;
+  height: 100rem;
+  z-index: 100;
+  position: relative;
+  /***/
+}
+.map .map_popup_wrap {
+  z-index: 100;
+  top: 15rem;
+  left: 16%;
+  position: absolute;
+  width: 40rem;
+  height: 62rem;
+  background: #ffffff;
+  border-radius: 7.5rem;
+}
+.map .map_popup_wrap .map_popup {
+  position: relative;
+  overflow: hidden;
+  width: 40rem;
+  height: 62rem;
+  background: #ffffff;
+  border-radius: 7.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.map .map_popup_wrap .map_popup .map_popup_header {
+  position: relative;
+  text-align: center;
+  padding: 3rem 0;
+}
+.map .map_popup_wrap .map_popup .map_popup_header h3 {
+  font-size: 2.1rem;
+}
+.map .map_popup_wrap .map_popup .map_popup_search .search1 {
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+  height: 7rem;
+}
+.map .map_popup_wrap .map_popup .map_popup_search .search1 input {
+  padding: 2rem;
+  width: 60%;
+  margin-left: 4rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+}
+.map .map_popup_wrap .map_popup .map_popup_search .search1 i {
+  position: inherit;
+  font-size: 2rem;
+  background: #f3f3f3;
+  padding: 1.4rem;
+  color: #322F2F;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  border-radius: 999rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.map .map_popup_wrap .map_popup .map_popup_search .search1 i:hover {
+  background: #322F2F;
+  color: #fff;
+}
+.map .map_popup_wrap .map_popup .map_popup_search .search2_wrap {
+  border-bottom: 1px solid #DFDFDF;
+  display: flex;
+  text-align: center;
+}
+.map .map_popup_wrap .map_popup .map_popup_search .search2_wrap .sido {
+  cursor: pointer;
+  flex: 1;
+  font-size: 1.5rem;
+  border-right: 1px solid #DFDFDF;
+}
+.map .map_popup_wrap .map_popup .map_popup_search .search2_wrap .sido li {
+  display: none;
+}
+.map .map_popup_wrap .map_popup .map_popup_search .search2_wrap .gugun {
+  cursor: pointer;
+  flex: 1;
+  font-size: 1.5rem;
+}
+.map .map_popup_wrap .map_popup .map_popup_search .search2_wrap .gugun li {
+  display: none;
+}
+.map .map_popup_wrap .map_popup .map_popup_scroll {
+  position: relative;
+  overflow: auto;
+  height: 60rem;
+}
+.map .map_popup_wrap .map_popup .map_popup_scroll::-webkit-scrollbar {
+  background-color: #fff;
+  width: 3rem;
+}
+.map .map_popup_wrap .map_popup .map_popup_scroll::-webkit-scrollbar-thumb {
+  background-color: #454545;
+  border-radius: 5rem;
+  height: 2rem;
+  background-clip: padding-box;
+  border: 1rem solid transparent;
+}
+.map .map_popup_wrap .map_popup .map_popup_scroll::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+.map .map_popup_wrap .map_popup .map_popup_scroll ul li {
+  padding: 0 0 0 7rem;
+  padding-top: 2rem;
+  width: 100%;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+.map .map_popup_wrap .map_popup .map_popup_scroll ul li h4 {
+  font-size: 1.6rem;
+}
+.map .map_popup_wrap .map_popup .map_popup_scroll ul li h4 span {
+  color: #828282;
+  font-size: 1.5rem;
+  margin-left: 0.6rem;
+}
+.map .map_popup_wrap .map_popup .map_popup_scroll ul li p {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  font-weight: 500;
+}
+.map .map_popup_wrap .map_popup .map_popup_scroll ul li .button_wrap {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  position: relative;
+}
+.map .map_popup_wrap .map_popup .map_popup_scroll ul li .button_wrap a {
+  border: none;
+  background: #F2F2F2;
+  border-radius: 0.7rem;
+  padding: 1.5rem 3.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.map .map_popup_wrap .map_popup .map_popup_scroll ul li .button_wrap a:hover {
+  background: #322F2F;
+  color: #fff;
+}
+.map .map_wrap {
+  width: 100%;
+  position: relative;
+}
+.map .map_wrap div {
+  top: 2.5rem;
+  height: 82rem;
+  width: 100%;
+  position: absolute;
+}
+.map .map_popup_search {
+  display: inline-block;
+  width: 100%;
+}
+.map .map_popup_search .search2_wrap {
+  text-align: center;
+}
+.map .map_popup_search .search2_wrap .sido {
+  text-align: center;
+  padding: 2rem 0;
+  border-right: 1px solid #ccc;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+.map .map_popup_search .search2_wrap .gugun {
+  text-align: center;
+  border: none;
+}
+
+.map_popup_wrap_mo {
+  top: 5rem;
+  position: relative;
+  width: 100%;
+  background: #d6d6d6;
+  /*첫줄*/
+}
+.map_popup_wrap_mo .map_popup_header {
+  border-top: 1px solid #ccc;
+  position: relative;
+  width: 100%;
+}
+.map_popup_wrap_mo .map_popup_header .search1 input {
+  padding: 3rem;
+  width: 70%;
+  margin-left: 5rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+}
+.map_popup_wrap_mo .map_popup_header .search1 i {
+  position: inherit;
+  font-size: 2.5rem;
+  top: 33.33%;
+  background: #f3f3f3;
+  padding: 1.5rem;
+  margin-left: 2rem;
+  border-radius: 999rem;
+  cursor: pointer;
+}
+.map_popup_wrap_mo .map_popup_header .search1 i:hover {
+  background: #322F2F;
+  color: #fff;
+}
+.map_popup_wrap_mo .search2_wrap {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  text-align: center;
+  position: relative;
+}
+.map_popup_wrap_mo .search2_wrap .sido {
+  cursor: pointer;
+  outline: none;
+  flex: 1;
+  border-right: 1px solid #ccc;
+}
+.map_popup_wrap_mo .search2_wrap .gugun {
+  cursor: pointer;
+  flex: 1;
+  padding: 2rem;
+  outline: none;
+}
+.map_popup_wrap_mo .map_popup_scroll::-webkit-scrollbar {
+  background-color: #fff;
+  width: 3rem;
+}
+.map_popup_wrap_mo .map_popup_scroll::-webkit-scrollbar-thumb {
+  background-color: #454545;
+  border-radius: 5rem;
+  height: 2rem;
+  background-clip: padding-box;
+  border: 1rem solid transparent;
+}
+.map_popup_wrap_mo .map_popup_scroll::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+/* 매장찾기 서브페이지 찾기 - 1024px */
+@media (max-width: 9999px) {
+  .map_popup_wrap_mo {
+    display: none;
+  }
+}
+/* 매장찾기 서브페이지 찾기 - 1024px */
+@media (max-width: 1024px) {
+  .map_popup_wrap_mo {
+    display: none;
+  }
+}
+/* section 반응형 - 768px */
+@media (max-width: 768px) {
+  .map_popup_wrap {
+    display: none;
+  }
+  .map_popup_wrap_mo {
+    display: inline-block;
+    background: #fff;
+  }
+  .map_wrap {
+    display: none;
+  }
+  .search2_wrap {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: center;
+    position: relative;
+  }
+  .search2_wrap .sido {
+    flex: 1;
+    border-right: 1px solid #ccc;
+  }
+  .search2_wrap .gugun {
+    flex: 1;
+    padding: 2rem;
+  }
+  .map_popup_scroll {
+    position: relative;
+    overflow: auto;
+    height: 60rem;
+  }
+  .map_popup_scroll ul li {
+    position: relative;
+    display: flex;
+    padding: 5rem 5rem;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .map_popup_scroll ul li h4 {
+    font-size: 1.6rem;
+  }
+  .map_popup_scroll ul li h4 span {
+    color: #828282;
+    font-size: 1.5rem;
+    margin-left: 0.6rem;
+  }
+  .map_popup_scroll ul li p {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    font-weight: 500;
+  }
+  .map_popup_scroll ul li .button_wrap {
+    margin-left: 2rem;
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+  }
+  .map_popup_scroll ul li .button_wrap a {
+    border: none;
+    background: #F2F2F2;
+    border-radius: 0.7rem;
+    padding: 1.5rem 3.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .map_popup_scroll ul li .button_wrap a:hover {
+    background: #322F2F;
+    color: #fff;
+    font-weight: bold;
   }
 }
 
