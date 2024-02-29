@@ -82,3 +82,21 @@ products.data.map((item)=>{
 }
 
 window.addEventListener('load', importData)
+
+//탑 버튼
+const $topBtn = document.querySelector('.top_btn')
+window.addEventListener('scroll', ()=>{
+  let scroll = window.scrollY;
+  if( scroll > 100 ){
+    $topBtn.classList.add('active')
+  } else {
+    $topBtn.classList.remove('active')
+  }
+})
+
+$topBtn.addEventListener('click', ()=>{
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+})
