@@ -1964,13 +1964,8 @@ main.menu_main .de_menu .select_bar {
     margin: 1.5rem 0;
   }
 }
-/*tap 넣어보려 했는데 안되네,,*/
 .active {
   color: #E71C29;
-}
-
-body {
-  height: 200vh;
 }
 
 /*main*/
