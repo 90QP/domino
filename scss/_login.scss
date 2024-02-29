@@ -1,0 +1,386 @@
+.loMain {
+  @include set-1440();
+  margin-top: 15.7rem;
+
+  &>p {
+    font-size: 5.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  .loMain_mem {
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+    margin-bottom: 4.7rem;
+
+    &>a {
+      font-size: 3rem;
+      font-weight: 700;
+
+      &:first-child {
+        color: $red;
+        
+      }
+      &:last-child {
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+
+  .loMain_con {
+    width: 80rem;
+    height: 56.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 8.7rem;
+    margin: 0 auto 10rem;
+    padding: 0 3rem;
+    display: flex;
+
+    .con_general {
+      margin: 10rem 0 10rem;
+      flex: 1;
+      text-align: center;
+
+      &>p {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 3.5rem;
+      }
+
+      .lo_input {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+
+        input {
+          width: 24rem;
+          height: 5rem;
+          border: 1px solid #DFDFDF;
+          border-radius: 0.5rem;
+          outline: none;
+          padding: 0 2.3rem;
+          color: #000;
+
+          &::placeholder {
+            color: #bebebe;
+            font-size: 1.2rem;
+          }
+
+          &:first-child {
+            margin-bottom: 0.5rem;
+          }
+
+        }
+      }
+
+      .lo_check {
+        display: flex;
+        justify-content: space-between;
+        width: 24rem;
+        margin: 0 auto 3.8rem;
+        font-size: 1.4em;
+
+        input[type="checkbox"] {
+          position: relative;
+          top: 0.2rem;
+        }
+
+        label {
+          cursor: pointer;
+
+          &:hover {
+            color: #808080;
+          }
+        }
+
+        a {
+          &:hover {
+            color: #808080;
+          }
+        }
+      }
+
+      .lo_btn {
+
+        a {
+          background: $red;
+          display: block;
+          margin: auto;
+          width: 24rem;
+          height: 5.2rem;
+          border-radius: 5.4rem;
+          color: #fff;
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 5.2rem;
+
+          &:hover {
+            background: rgb(255, 18, 34);
+          }
+
+          &:last-child {
+            background: #cfcfcf;
+            margin-top: 0.5rem;
+
+            &:hover {
+              background: #bfbebe;
+            }
+          }
+        }
+      }
+    }
+
+    .con_social {
+      margin: 10rem 0 10rem;
+      border-left: 0.2rem dashed #EEEEEE;
+      flex: 1;
+      text-align: center;
+
+      &>p {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 3.5rem;
+      }
+
+      .so_con {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 5rem;
+
+        .so_img {
+          margin: 0 1rem 1rem;
+
+          &>a {
+            width: 11rem;
+            display: block;
+            margin-bottom: 0.5rem;
+            overflow: hidden;
+            border-radius: 50%;
+          }
+        }
+
+        &>p {
+          font-size: 1.5rem;
+        }
+      }
+
+      img {
+        width: 11rem;
+        transition: 0.3s;
+
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}
+
+.loNoti {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  translate: 0.3s;
+
+  .loNoti_wrap {
+    position: relative;
+    background: #fff;
+    width: 67rem;
+    height: 34.5rem;
+    text-align: center;
+    padding: 7rem;
+    border-radius: 6rem;
+
+    p:first-child {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 5rem;
+    }
+
+    .loNoti_info {
+      margin-bottom: 5rem;
+      font-size: 2rem;
+
+      br {
+        display: none;
+      }
+
+      span {
+        color: $red;
+      }
+    }
+
+    .loNoti_btn {
+      a {
+        display: inline-block;
+        width: 22rem;
+        height: 5rem;
+        background: #CFCFCF;
+        border-radius: 5.4rem;
+        font-size: 2rem;
+        color: #fff;
+        line-height: 5rem;
+
+
+        &:last-child {
+          background: $blue;
+          margin-left: 1.5rem;
+        }
+      }
+    }
+
+    .loNoti_close {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+      position: absolute;
+      top: -3rem;
+      right: -2rem;
+      transition: 0.3s;
+
+      &:hover {
+        scale: 1.2;
+      }
+
+    }
+  }
+
+}
+.popOpen {
+  display: flex;
+}
+
+
+@media (max-width:768px) {
+  .loMain {
+    margin-top: 13rem;
+
+    &>p {
+      font-size: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .loMain_mem {
+      gap: 4.5rem;
+      margin-bottom: -5rem;
+
+      &>a {
+        font-size: 2.5rem;
+      }
+    }
+
+    .loMain_con {
+      width: 55rem;
+      height: 71rem;
+      display: block;
+
+      .con_general {
+        padding-top: 5rem;
+
+        .lo_input {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 1.5rem;
+
+          input {
+            height: 4.5rem;
+          }
+        }
+
+        .lo_btn {
+          a {
+            background: $red;
+            display: block;
+            margin: auto;
+            width: 24rem;
+            height: 5.2rem;
+            border-radius: 5.4rem;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 5.2rem;
+
+            &:last-child {
+              background: #cfcfcf;
+              margin-top: 0.5rem;
+            }
+          }
+        }
+      }
+
+      .con_social {
+        border-left: none;
+        position: relative;
+
+        &>p {
+          color: #BEBEBE;
+          font-weight: 500;
+        }
+
+        .so_con {
+          flex-wrap: nowrap;
+          
+          padding: 0;
+
+          .so_img {
+            margin:1rem -1rem;
+
+            img {
+            width: 6.6rem;
+
+            &:hover {
+              scale: 1;
+            }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .loNoti {
+    .loNoti_wrap {
+      width: 32.2rem;
+      height: 45rem;
+      padding: 6rem 4rem;
+
+      p:first-child {
+        font-size: 2.5rem;
+      }
+
+      .loNoti_info {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+
+        br {
+          display: block;
+        }
+      }
+
+      .loNoti_btn {
+        a {
+          width: 16rem;
+          height: 4.8rem;
+
+          &:last-child {
+            background: $blue;
+            margin: 1.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
